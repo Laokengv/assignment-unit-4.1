@@ -15,24 +15,27 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return a personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'LK!';
+  return 'LK' + '!';
 }
 // Remember to call the function to test
 console.log('Hello,', helloName());
 
 // 3. Function to add two numbers together & return the result
+let firstNumber = 15;
+let secondNumber = 6;
 function addNumbers( firstNumber ) {
-  return 15 + 6;
+  return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
 }
-console.log(addNumbers());
+console.log('15 + 6 =', addNumbers(firstNumber, secondNumber));
+
 
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(x, y, z){
   return x * y * z;
 }
-console.log(multiplyThree(3, 39, 18));
+console.log('3 * 39 *  18 =', multiplyThree(3, 39, 18));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -69,7 +72,6 @@ console.log('Return last item in array:', getLast([39, 2, 239, 16, 8, 47]));
 let hand = [2, 7, 3, 10, 1];
 function find( value, array ){
   for (i = 0; i < hand.length; i++){
-    console.log(hand[i]);
     if(hand[i] === 5){
       console.log('Match!');
       return true;
