@@ -70,8 +70,16 @@ let hand = [2, 7, 3, 10, 1];
 function find( value, array ){
   for (i = 0; i < hand.length; i++){
     console.log(hand[i]);
+    if(hand[i] === 5){
+      console.log('Match!');
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 }
+console.log('Finding value in an array', find());
 
 // ----------------------
 // Stretch Goals
