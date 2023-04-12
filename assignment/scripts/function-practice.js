@@ -66,8 +66,11 @@ console.log('Return last item in array:', getLast([39, 2, 239, 16, 8, 47]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let hand = [2, 7, 3, 10, 1];
 function find( value, array ){
-
+  for (i = 0; i < hand.length; i++){
+    console.log(hand[i]);
+  }
 }
 
 // ----------------------
