@@ -15,19 +15,17 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return a personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'LK' + '!';
+  return name + '!';
 }
 // Remember to call the function to test
-console.log('Hello,', helloName());
+console.log('Hello,', helloName('Laokeng'));
 
 // 3. Function to add two numbers together & return the result
-let firstNumber = 15;
-let secondNumber = 6;
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
   return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
 }
-console.log('15 + 6 =', addNumbers(firstNumber, secondNumber));
+console.log('15 + 6 =', addNumbers(15, 6));
 
 
 
@@ -41,13 +39,9 @@ console.log('3 * 39 *  18 =', multiplyThree(3, 39, 18));
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
-  if ( number > 0 ){
-    return true;
-  }
-  else{
-    return false;
-  }
+  return number > 0;
 }
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -88,6 +82,7 @@ console.log('Finding value in an array', find());
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+let string = 'apple'
 function isFirstLetter(letter, string) {
 
 }
@@ -96,11 +91,11 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
-  let sum = 0
+  let sum = 0;
   // TODO: loop to add items
   return sum;
 }
-
+sumAll();
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
